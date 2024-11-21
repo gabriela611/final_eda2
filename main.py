@@ -180,7 +180,7 @@ class GrafoApp(QtWidgets.QMainWindow):
             for i in range(filas):
                 fila = []
                 for j in range(columnas):
-                    item = self.ui.tableWidget_2.item(i, j)  # Cambié la referencia a tableWidget_2
+                    item = self.ui.tableWidget_2.item(i, j)  
                     valor = int(item.text()) if item and item.text().isdigit() else 0
                     fila.append(valor)
                 matriz.append(fila)
